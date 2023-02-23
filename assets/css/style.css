@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+/*Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+}
+
+/* Media Query - Until 400px */
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+
+    body {
+        min-width: 400px;
+        max-width: 600px;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .zion-logo {
+        width: 200px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 600px;
+        max-height: 100vh;
+        width: 96vw;
+        height: auto;
+    }
+
+    span  {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 600;
+        padding: 20px;
+
+    }
+
+    div .form-side {
+        max-width: 95vw;
+        height: 80vh;
+        margin-top: 50px;
+    }
+
+    input {
+        outline: none;
+        border: none;
+        overflow: visible;
+    }
+
+    input.inputs {
+        margin: 30px auto;
+        display: block;
+        width: 80%;
+        border-radius: 5px 5px;
+        background-color: #e6e6e692;
+        text-align: center;
+        line-height: 4;
+    }
+
+    input::placeholder {
+        color: #c6c5c5;
+        font-size: 1.2em;
+    }
+
+    button {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: none;
+        overflow: visible;
+        text-transform: uppercase;
+        background: #57b846;
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: 700;
+        
+    }
+
+    button:hover {
+        background-color: #246518;
+        cursor: pointer;
+    }
+
+    .login-button {
+        width: 80%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 1.5;
+        background: #57b846;
+        border-radius: 5px 5px;
+    }
+
+    .forgot-password{
+        width: 80%;
+        display: block;
+        margin: 20px auto;
+        text-align: right;
+    }
+
+    .forgot-password a {
+        text-decoration: none;
+    }
+
+    .forgot-password a:hover {
+        text-decoration: underline;
+    }
+
+    div .animation-side {
+        display: none;
+    }
+
+
+}
+
+
+
+background: -webkit-linear-gradient(to right, #21d4fd, #b721ff, #21d4fd, #b721ff);
